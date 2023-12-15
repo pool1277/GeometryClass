@@ -8,19 +8,18 @@ namespace GeometryClass
 {
    public class Square : Rectangle
     {
-
-        private double EdgeSize;
+        private double sideLength;
 
         public override double Height
         {
             get
             {
-                return EdgeSize;
+                return sideLength;
             }
 
             set
             {
-                EdgeSize = value;
+                sideLength = value;
             }
         }
 
@@ -28,18 +27,18 @@ namespace GeometryClass
         {
             get
             {
-                return EdgeSize;
+                return sideLength;
             }
             set
             {
-                EdgeSize = value;
+                sideLength = value;
             }
         }
 
-        public Square(double edgeSize)
+        public Square(double length)
         {
             Type = ShapeType.Square;
-            EdgeSize = edgeSize;
+            sideLength = length;
         }
 
         public override double Area()
@@ -51,7 +50,5 @@ namespace GeometryClass
         {
             return 2 * (Height + Width);
         }
-
-
     }
 }
