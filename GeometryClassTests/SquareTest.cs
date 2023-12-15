@@ -9,11 +9,11 @@ namespace GeometryClass.Tests
         public void SquareArea()
         {
             // arrange
-            double Edge = 10;
-            Rectangle square = new Square(Edge);
+            double sideLenth = 10;
+            Rectangle square = new Square(sideLenth);
 
             // act
-            double AreaAns = Edge * Edge;
+            double AreaAns = sideLenth * sideLenth;
 
             // assert
             Assert.AreEqual(AreaAns, square.Area());
@@ -23,11 +23,11 @@ namespace GeometryClass.Tests
         public void SquarePerimeter()
         {
             // arrange
-            double Edge = 10;
-            Rectangle square = new Square(Edge);
+            double sideLength = 10;
+            Rectangle square = new Square(sideLength);
 
             // act
-            double PerimeterAns = Edge * 4;
+            double PerimeterAns = sideLength * 4;
 
             // assert
             Assert.AreEqual(PerimeterAns, square.Perimeter());
@@ -37,8 +37,8 @@ namespace GeometryClass.Tests
         public void SquareToString()
         {
             // arrange
-            double Edge = 10;
-            Rectangle square = new Square(Edge);
+            double sideLength = 10;
+            Rectangle square = new Square(sideLength);
 
             // act
             string ToStringAns = "Type: Square, Perimeter: 40, Area: 100";
@@ -51,8 +51,8 @@ namespace GeometryClass.Tests
         public void SquareSetEdge()
         {
             // arrange
-            double Edge = 10;
-            Rectangle square = new Square(Edge);
+            double sideLength = 10;
+            Rectangle square = new Square(sideLength);
 
             // act
             square.Width = 180;
