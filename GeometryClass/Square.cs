@@ -29,6 +29,7 @@ namespace GeometryClass
             {
                 return sideLength;
             }
+
             set
             {
                 sideLength = value;

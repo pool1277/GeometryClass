@@ -19,10 +19,10 @@ namespace GeometryClass
 
         }
 
-        public Rectangle(double width, double height)
+        public Rectangle(double _width, double _height)
         {
-            Width = width;
-            Height = height;
+            Width = _width;
+            Height = _height;
         }
 
         public virtual double Area()

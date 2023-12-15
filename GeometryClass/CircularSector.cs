@@ -29,10 +29,10 @@ namespace GeometryClass
 
         }
 
-        public CircularSector(double radius, double angle)
+        public CircularSector(double _radius, double _angle)
         {
-            Radius = radius;
-            Angle = angle;
+            Radius = _radius;
+            Angle = _angle;
         }
 
         public virtual double Perimeter()
